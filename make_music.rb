@@ -148,28 +148,6 @@ in_thread do
     play :G3, amp: 2, attack: 0.5, release: 0.5
     sleep 0.3
   end
-  
-  sleep 10
-  live_loop :lower_piano do
-    use_synth :piano
-    play :F3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play :G3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play :B3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play :A3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play chord(:C4, :major), amp: 7, attack: 1, release: 1, sustain: 1
-    play chord(:C3, :major), amp: 7, attack: 1, release: 1, sustain: 1
-    sleep 0.3
-    play :A3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play :B3, attack: 0.5, release: 0.5
-    sleep 0.3
-    play :G3, attack: 0.5, release: 0.5
-    sleep 0.3
-  end
 end
 
 in_thread do
@@ -225,19 +203,11 @@ end
 in_thread do
   sleep 35
   live_loop :drums do
-    sample :bass_hit_c, rate: 1.2, amp: 0.5
-    sleep 0.3
-    sample :bass_hit_c, rate: 1.2, amp: 0.5
-    sleep 0.1
-    sample :bass_hit_c, rate: 1.5, amp: 0.5
-    sleep 0.2
-    sample :bass_hit_c, rate: 1.6, amp: 0.5
+    sample :drum_bass_hard, rate: 1.2, amp: 0.25
     sleep 0.4
-    sample :bass_hit_c, rate: 1.5, amp: 0.5
+    sample :drum_bass_hard, rate: 1.2, amp: 0.25
     sleep 0.2
-    sample :bass_hit_c, rate: 1.2, amp: 0.5
-    sleep 0.2
-    sample :drum_cymbal_closed, amp: 0.15
-    sleep 0.2
+    sample :drum_bass_hard, rate: 1.5, amp: 0.25
+    sleep 0.4
   end
 end
