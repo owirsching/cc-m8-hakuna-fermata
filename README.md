@@ -25,5 +25,5 @@ the end of the study session.
 Play `ehtereal_river.wav` in this repository
 
 ### To Edit / Play the Code Live
-1) Open `ehtereal_river.rb` in (https://sonic-pi.net/)[Sonic Pi]
+1) Open `ehtereal_river.rb` in [Sonic Pi](https://sonic-pi.net/)
 2) Press the play button 
